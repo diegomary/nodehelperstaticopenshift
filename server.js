@@ -8,18 +8,18 @@ let ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 
 app.use(express.static(__dirname + '/images'));
 
-app.get('/', function (req, res) {
+app.get('/',  (req, res)=> {
   
       res.send('This is the starting point');      
  
 });
 
 
-app.get('/redisstringsample', (req, res, next) => { 
+app.get('/redisstringsample', (req, res) => { 
 
-    let redisClient = redis.createClient({host : 'redis://redis', port : 6379});
+    let redisClient = redis.createClient({host : 'redis-19729.c10.us-east-1-2.ec2.cloud.redislabs.com', port : 19729});
 
-    redisClient.auth('diegomary',(err,reply) => {
+    redisClient.auth('diegomary6298',(err,reply) => {
         console.log(err);
         console.log(reply);
     });
