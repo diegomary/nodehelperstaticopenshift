@@ -1,0 +1,26 @@
+{
+  "name": "nodehelper",
+  "version": "0.0.1",
+  "description": "Node.js sample app for OpenShift 3",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Diego Aldo Burlando",
+  "license": "gnu",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
