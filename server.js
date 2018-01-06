@@ -25,7 +25,7 @@ app.post('/postredis', (req, res) => {
 
     let redisClient = redis.createClient({host : 'redis-19729.c10.us-east-1-2.ec2.cloud.redislabs.com', port : 19729});
 
-    redisClient.auth('diegomary6298',(err,reply) => {
+    redisClient.auth('taddeo62',(err,reply) => {
         console.log(err);
         console.log(reply);
     });
