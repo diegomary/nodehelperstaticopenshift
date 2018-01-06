@@ -9,7 +9,7 @@ let ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 
 app.get('/', function (req, res) {
   
-      res.send('hello');
+      res.send('This is the starting point');
  
 });
 
